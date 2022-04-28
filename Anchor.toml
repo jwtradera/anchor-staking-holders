@@ -1,0 +1,20 @@
+[features]
+seeds = false
+[programs.localnet]
+wolf_stake = "6PXA5EtWqQ7r9agVNYm5sPPXCao2DxRwuE5HkTQ4d6uZ"
+
+[programs.devnet]
+wolf_stake = "6PXA5EtWqQ7r9agVNYm5sPPXCao2DxRwuE5HkTQ4d6uZ"
+
+[programs.testnet]
+wolf_stake = "6PXA5EtWqQ7r9agVNYm5sPPXCao2DxRwuE5HkTQ4d6uZ"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/john/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
